@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade-Final</title>
+</head>
+
+<body>
+    <header>
+        <h1>Conteúdos</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hospedagem.html">Hospedagem</a></li>
+                <li><a href="git-github.html">Git e Github</a></li>
+                <li><a href="githubpages.html">Github Pages</a></li>
+                <li><a href="portifólio.html">Portifólio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>O que é o Git</h1>
+            <p>O Git é uma ferramenta usada para controlar a versão do seu site ou app.
+                O nome do app para usar o Git é Git Bash e para configura-lo é só seguir o tutorial:
+            </p>
+            <p>
+                1º primeiro confira se o git está instalado
+                <br>
+                git --version
+                <br>
+                2º agora confira os seus documentos
+                <br>
+                cd Documents;
+                <br>
+                3º abra o Documents
+                <br>
+                ls
+                <br>
+                4º agora configure
+                <br>
+                git config --global user.name (seu nome)
+                git config --global user.email (seu e-mail)
+                <br>
+                5º crie uma pasta cd
+                <br>
+                mkdir *notas(ou outro nome)
+                <br>
+                ls{aqui mostra o que tem dentro da pasta}
+                <br>
+                cd *notas/
+                <br>
+                ls{aqui mostra o que tem dentro da pasta}
+                <br>
+                6º inicialize o git
+                <br>
+                git init
+                <br>
+                7º abra com o visual studio code
+                <br>
+                code .
+                <br>
+                8º escreva suas anotações, criando um arquivo com o nome de readme.md ,na pasta NOTAS.
+                <br>
+            </p>
+        </section>
+        <section>
+            <h1>O que é o Github</h1>
+            <p>O Github é um site para mandar os seus arquivos, como se fosse um google drive só que maior
+                e com a possibilidade que ver o perfil de outras pessoas, sem contar que caso perdemos o nosso
+                e-mail podemos visualizar as coisas que postamos pois estamos em um site com nossas coisas.
+            </p>
+            <p>Para configurar o Github é só se cadastrar nele, então coloque o seu e-mail pessoal e crie um senha</p>
+            <p>Agora para colocar o Git no Github é só seguir o tutorial:</p>
+                <br>
+                <h2>Abra um terminal, no seu vscode,Verifique se existe chave ssh.</h2>
+                <br>
+                <p>ls -al ~/.ssh</p>
+                <br>
+                <h2> Adicione uma nova chave. (ID)</h2>
+                <br>
+                ssh-keygen -t ed25519 -C "your_email@example.com"
+                <br>
+                só fazer quando mudar de máquina.
+                <br>
+                <h2>Clique no "enter" até chegar em um quadrado com muitos caracteres.</h2>
+                <br>
+                <h2>Inicializar agente-ssh.eval</h2>
+                <br>
+                "$(ssh-agent -s)"
+                <br>
+                <h2>Adicionar chave ssh ao agente</h2>
+                <br>
+                ssh-add ~/.ssh/id_ed25519
+                <br>
+                <h2>Copiar chave ssh.</h2>
+                <br>
+                clip < ~/.ssh/id_ed25519.pub Adicionar chave no github Github -> Settings -> SSH and GPG keys -> NewSSH
+                    key -> Colar*Coloque um título que identifique a chave*
+                    <br>
+                    Testar conexãossh -T git@github.com
+                    pressione 'yes'
+                    <br>
+                    <h2>Caso você já tenha a chave é só seguir do copiar a chave em diante.</h2>
+                    <br>
+            
+            <h1>O que é </h1>
+            <p>
+                    Build= um processo que serve para deixar o codigo de nosso app mais seguro (pois a maquina verá
+                    melhor do que o humano), e também deixa ele melhor para enviar para o público.
+                    <br><br>
+                    Uploud= é um processo de enviar o app para o público.
+                    <br><br>
+                    Backup= é um processo de atualizar os arquivos do app e salvar. Para caso alguém hackear os seus
+                    arquivos você ter eles salvos.
+                    <br><br>
+            </p>
+        </section>
+    </main>
+</body>
+
+</html>

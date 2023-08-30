@@ -1,0 +1,8 @@
+.borda{
+    border: 2px;
+    border-color: black;
+    border-style: double;
+}
+.borda-redonda{
+    border-radius: 10px;
+}
